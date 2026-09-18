@@ -1,35 +1,42 @@
 {
-  "name": "One Sarapio",
+  "name": "One Sarapio - Munteme Kikuube Trusted Services",
   "short_name": "One Sarapio",
-  "description": "Munteme Kikuube Trusted Services - Stationery, Printing, Online, Mobile Money",
-  "start_url": ".",
+  "description": "Trusted services in Munteme Kikuube - Passport, National ID, CV, Interpol, Phone Tracking, NSSF, Printing, Mobile Money. Email: buganjaines@gmail.com",
+  "start_url": "/One-Sarapio-/?utm_source=pwa",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a",
+  "background_color": "#eff6ff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icon-512.png",
+      "src": "profile.jpg",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Email Us",
+      "url": "mailto:buganjaines@gmail.com",
+      "icons": [{"src": "icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://wa.me/256755555272",
+      "icons": [{"src": "icon-192.png", "sizes": "192x192"}]
     }
   ]
 }
