@@ -11,61 +11,77 @@ body{background:#eff6ff;font-family:system-ui,sans-serif}
 .ava{width:88px;height:88px;border-radius:50%;border:3px solid #2563eb;object-fit:cover}
 .h1{color:#1e3a8a;font-size:26px;font-weight:900;line-height:1}
 .sub{color:#1e40af;font-size:13px}
-.badge{background:#1d4ed8;color:white;padding:6px 10px;border-radius:10px;font-size:11px;display:inline-flex;align-items:center;gap:4px;margin-top:6px}
-.btns{background:#bfdbfe;padding:12px;display:flex;gap:10px;border-radius:16px;margin:12px}
-.b{flex:1;padding:13px;border-radius:12px;text-align:center;font-weight:800;text-decoration:none;color:white;font-size:15px}
-.bw{background:#1d4ed8}
-.bg{background:#22c55e}
-.sec{padding:12px}
-.t{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.t b{color:#1e3a8a;font-size:20px}
-.t a{color:#2563eb;font-size:14px;text-decoration:none}
+.badge{background:#1d4ed8;color:white;padding:6px 10px;border-radius:10px;font-size:11px;display:inline-flex;gap:4px;margin-top:6px}
+.btns{background:#bfdbfe;padding:12px;display:flex;gap:10px;border-radius:16px;margin:12px;flex-wrap:wrap}
+.b{flex:1;padding:13px;border-radius:12px;text-align:center;font-weight:800;text-decoration:none;color:white;font-size:15px;min-width:120px}
+.bw{background:#1d4ed8}.bg{background:#22c55e}.be{background:#0f172a;width:100%}
+.sec{padding:12px}.t{display:flex;justify-content:space-between;margin-bottom:10px}.t b{color:#1e3a8a;font-size:20px}
 .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .it{background:white;border-radius:14px;padding:12px 6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06);border:1px solid #dbeafe}
 .ic{width:54px;height:54px;background:#dbeafe;border-radius:50%;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-size:26px}
 .it b{font-size:11px;color:#1e293b;display:block;line-height:1.2}
-.nav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:12px 0;border-top:1px solid #dbeafe}
-.nav a{color:#64748b;text-decoration:none;font-size:12px;text-align:center;font-weight:600}
+.profile-card{background:white;border-radius:18px;padding:20px;margin:12px;border:2px solid #2563eb}
+.profile-card h3{color:#1e3a8a;font-size:18px;margin-bottom:14px;text-align:center}
+.p-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #eff6ff}
+.p-row span{font-size:22px;width:36px;height:36px;background:#dbeafe;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.p-row div b{font-size:14px;color:#0f172a;display:block}
+.p-row div a{color:#1d4ed8;text-decoration:none;font-weight:700;font-size:14px}
+.p-row div small{color:#64748b;font-size:12px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:12px 0;border-top:1px solid #dbeafe;z-index:10}
+.nav a{color:#64748b;text-decoration:none;font-size:12px;text-align:center;font-weight:600;cursor:pointer}
 .nav a.act{color:#1d4ed8}
-.pad{padding-bottom:70px}
+.pad{padding-bottom:90px}
+.hidden{display:none}
 </style>
 </head>
 <body>
+<div id="home">
 <div class="head">
 <img src="profile.jpg" class="ava" onerror="this.src='icon-192.png'">
-<div>
-<div class="h1">One Sarapio</div>
-<div class="sub">Munteme Kikuube Trusted Services</div>
-<div class="badge">🛡️ Licensed & Verified - Uganda 🇺🇬</div>
-</div>
+<div><div class="h1">One Sarapio</div><div class="sub">Munteme Kikuube Trusted Services</div><div class="badge">🛡️ Licensed & Verified - Uganda 🇺🇬</div></div>
 </div>
 <div class="btns">
 <a class="b bw" href="https://wa.me/256755555272">💬 WhatsApp</a>
 <a class="b bg" href="tel:+256755555272">📞 Call</a>
+<a class="b be" href="mailto:buganjaines@gmail.com">📧 buganjaines@gmail.com</a>
 </div>
 <div class="sec pad">
-<div class="t"><b>Our Services</b><a href="#">See all →</a></div>
+<div class="t"><b>Our Services</b><span style="color:#2563eb">15 Services</span></div>
 <div class="grid">
-<div class="it"><div class="ic">📘</div><b>Passport Making</b></div>
-<div class="it"><div class="ic">🪪</div><b>National ID</b></div>
-<div class="it"><div class="ic">📄</div><b>CV Cover Letter</b></div>
-<div class="it"><div class="ic">🌍</div><b>Abroad Job Connections</b></div>
-<div class="it"><div class="ic">🛡️</div><b>Interpol Certificate</b></div>
-<div class="it"><div class="ic">📍</div><b>Lost Phone Tracking</b></div>
-<div class="it"><div class="ic">🔑</div><b>Forgot Passwords Recovery</b></div>
-<div class="it"><div class="ic">🏦</div><b>TIN & NSSF</b></div>
-<div class="it"><div class="ic">💻</div><b>Website Designing</b></div>
-<div class="it"><div class="ic">📚</div><b>Stationery</b></div>
-<div class="it"><div class="ic">🖨️</div><b>Printing</b></div>
-<div class="it"><div class="ic">🌐</div><b>Online Services URA UNEB</b></div>
-<div class="it"><div class="ic">💵</div><b>Mobile Money</b></div>
-<div class="it"><div class="ic">🎨</div><b>Graphic Design</b></div>
-<div class="it"><div class="ic">📝</div><b>Secretarial</b></div>
+<div class="it"><div class="ic">📘</div><b>Passport</b></div><div class="it"><div class="ic">🪪</div><b>National ID</b></div><div class="it"><div class="ic">📄</div><b>CV Letter</b></div>
+<div class="it"><div class="ic">🌍</div><b>Abroad Jobs</b></div><div class="it"><div class="ic">🛡️</div><b>Interpol</b></div><div class="it"><div class="ic">📍</div><b>Phone Tracking</b></div>
+<div class="it"><div class="ic">🔑</div><b>Password Recovery</b></div><div class="it"><div class="ic">🏦</div><b>TIN & NSSF</b></div><div class="it"><div class="ic">💻</div><b>Website</b></div>
+<div class="it"><div class="ic">📚</div><b>Stationery</b></div><div class="it"><div class="ic">🖨️</div><b>Printing</b></div><div class="it"><div class="ic">🌐</div><b>Online URA</b></div>
+<div class="it"><div class="ic">💵</div><b>Mobile Money</b></div><div class="it"><div class="ic">🎨</div><b>Graphic</b></div><div class="it"><div class="ic">📝</div><b>Secretarial</b></div>
+</div>
+
+<!-- PROFILE SECTION ADDED HERE -->
+<div class="profile-card" id="profileSec">
+<h3>👤 Business Profile</h3>
+<div class="p-row"><span>👨‍💼</span><div><b>One Sarapio</b><small>CEO & Founder</small></div></div>
+<div class="p-row"><span>📧</span><div><b>Email Address</b><a href="mailto:buganjaines@gmail.com?subject=Hello%20One%20Sarapio&body=Hello%20I%20need%20your%20services">buganjaines@gmail.com</a><br><small>Click to email us - Fast reply</small></div></div>
+<div class="p-row"><span>📱</span><div><b>WhatsApp / Call</b><a href="https://wa.me/256755555272">+256 755 555 272</a><br><small>Tap to chat on WhatsApp</small></div></div>
+<div class="p-row"><span>📍</span><div><b>Location</b><b style="color:#1e40af">Munteme Trading Centre</b><br><small>Kikuube District, Uganda - Open 7am-9pm</small></div></div>
+<div class="p-row"><span>🛡️</span><div><b>Licensed & Verified</b><small>Trusted Services in Kikuube since 2020</small></div></div>
+<div style="margin-top:16px;display:flex;gap:8px">
+<a href="mailto:buganjaines@gmail.com" style="flex:1;background:#1d4ed8;color:white;padding:12px;border-radius:10px;text-align:center;text-decoration:none;font-weight:800">📧 Send Email</a>
+<a href="https://wa.me/256755555272" style="flex:1;background:#22c55e;color:white;padding:12px;border-radius:10px;text-align:center;text-decoration:none;font-weight:800">💬 WhatsApp</a>
 </div>
 </div>
+
+</div>
+</div>
+
 <div class="nav">
-<a class="act" href="#">🏠<br>Home</a><a href="#">💼<br>Services</a><a href="#">🕒<br>History</a><a href="#">👤<br>Profile</a>
+<a class="act" onclick="show('home')">🏠<br>Home</a>
+<a onclick="document.getElementById('profileSec').scrollIntoView({behavior:'smooth'})">💼<br>Services</a>
+<a onclick="document.getElementById('profileSec').scrollIntoView({behavior:'smooth'})">👤<br>Profile</a>
+<a href="mailto:buganjaines@gmail.com">📧<br>Email</a>
 </div>
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}</script>
+
+<script>
+function show(id){document.getElementById('home').classList.remove('hidden')}
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
+</script>
 </body>
-  </html>
+</html>
