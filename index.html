@@ -1,50 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One Sarapio</title>
+<title>One Sarapio - Trusted Services</title>
 <style>
-body{background:#0b1120;color:#e2e8f0;font-family:sans-serif;margin:0}
-.header{text-align:center;padding:30px 20px}
-.header h1{color:#c9a86a;font-size:32px}
-.card{background:#151e32;border-radius:16px;padding:18px;margin:12px 15px}
-.card-title{color:#c9a86a;font-weight:600}
-.card-desc{color:#94a3b8;font-size:13px;margin:6px 0 14px}
-.book-btn{background:#c9a86a;color:#0b1120;border:none;width:100%;padding:13px;border-radius:10px;font-weight:600}
+*{box-sizing:border-box}
+body{margin:0;background:#0b1120;color:#e2e8f0;font-family:system-ui,Segoe UI,sans-serif}
+.header{text-align:center;padding:35px 20px 10px}
+.logo-ring{width:85px;height:85px;border:3px solid #c9a86a;border-radius:50%;border-bottom-color:transparent;border-left-color:transparent;margin:0 auto 18px;transform:rotate(-45deg)}
+.header h1{color:#c9a86a;font-size:36px;margin:0;font-weight:700;letter-spacing:.5px}
+.header .sub{color:#a3adc2;font-size:14px;margin:6px 0}
+.header .wa{color:#c9a86a;font-size:14px;margin-top:10px}
+.social{display:flex;justify-content:center;gap:10px;margin:18px 0 22px}
+.social a{padding:8px 16px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600}
+.fb{background:#2563eb;color:#fff}
+.tk{background:#000;color:#fff;border:1px solid #333}
+.ws{background:#22c55e;color:#fff}
+.badge{display:inline-block;border:1.5px solid #c9a86a;color:#c9a86a;padding:11px 22px;border-radius:10px;font-size:13px;letter-spacing:1px;margin:0 auto}
+.wrap{max-width:520px;margin:0 auto;padding:12px 14px 90px}
+.card{background:#151e32;border:1px solid #1e2a44;border-radius:16px;padding:18px 18px 16px;margin-bottom:14px}
+.title{color:#c9a86a;font-weight:600;font-size:15px}
+.desc{color:#8a95ad;font-size:13px;margin:5px 0 14px}
+.book{width:100%;background:#c9a86a;color:#1a1205;border:0;padding:12px;border-radius:10px;font-weight:700;font-size:14px}
+.book:active{transform:scale(.98)}
+a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
 <div class="header">
+<div class="logo-ring"></div>
 <h1>One Sarapio</h1>
-<p>Munteme, Kikuube • Trusted Services</p>
-<p>Stationery • Printing • Online Services</p>
-<p style="color:#c9a86a">WhatsApp: +256 755 555 272</p>
+<div class="sub">Munteme, Kikuube • Trusted Services</div>
+<div class="sub">Stationery • Printing • Online Services</div>
+<div class="wa">WhatsApp: +256 755 555 272</div>
+<div class="social">
+<a class="fb" href="https://facebook.com">Facebook</a>
+<a class="tk" href="https://tiktok.com/@onesarapio">TikTok</a>
+<a class="ws" href="https://wa.me/256755555272">WhatsApp</a>
+</div>
+<div class="badge">SERVICES WE OFFER</div>
 </div>
 
-<div class="card">
-<div class="card-title">🛂 Passport Making</div>
-<div class="card-desc">Passport application guidance</div>
-<a href="https://wa.me/256755555272"><button class="book-btn">Book</button></a>
-</div>
+<div class="wrap">
+<div class="card"><div class="title">🛂 Passport Making</div><div class="desc">Passport application guidance</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Passport%20Making"><button class="book">Book</button></a></div>
 
-<div class="card">
-<div class="card-title">📄 CV + Cover Letter</div>
-<div class="card-desc">Professional CV & Cover Letter</div>
-<a href="https://wa.me/256755555272"><button class="book-btn">Book</button></a>
-</div>
+<div class="card"><div class="title">📄 CV + Cover Letter</div><div class="desc">Professional CV & Cover Letter</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20CV%20Cover%20Letter"><button class="book">Book</button></a></div>
 
-<div class="card">
-<div class="card-title">📱 Lost Phone Tracking</div>
-<div class="card-desc">Help track your lost phone</div>
-<a href="https://wa.me/256755555272"><button class="book-btn">Book</button></a>
-</div>
+<div class="card"><div class="title">📱 Lost Phone Tracking</div><div class="desc">Help track your lost phone</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Lost%20Phone%20Tracking"><button class="book">Book</button></a></div>
 
-<div class="card">
-<div class="card-title">🛡️ Interpol & Good Conduct</div>
-<div class="card-desc">Certificate of Good Conduct</div>
-<a href="https://wa.me/256755555272"><button class="book-btn">Book</button></a>
-</div>
-<!-- Add other services same way - no UGX lines -->
+<div class="card"><div class="title">🛡️ Interpol & Good Conduct</div><div class="desc">Certificate of Good Conduct</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Good%20Conduct"><button class="book">Book</button></a></div>
 
+<div class="card"><div class="title">✈️ Abroad Job Connections</div><div class="desc">Legit abroad job connections</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Abroad%20Job%20Connections"><button class="book">Book</button></a></div>
+
+<div class="card"><div class="title">🔑 Forgot Passwords Recovery</div><div class="desc">Email & account recovery</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Password%20Recovery"><button class="book">Book</button></a></div>
+
+<div class="card"><div class="title">🪪 National ID Making</div><div class="desc">National ID application & correction</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20National%20ID"><button class="book">Book</button></a></div>
+
+<div class="card"><div class="title">🏦 TIN & NSSF Account</div><div class="desc">TIN & NSSF account creating</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20TIN%20NSSF"><button class="book">Book</button></a></div>
+
+<div class="card"><div class="title">🌐 Website Designing</div><div class="desc">Professional website designing</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Website%20Design"><button class="book">Book</button></a></div>
+
+<div class="card"><div class="title">🖨️ Stationery and Printing</div><div class="desc">All stationery & printing services</div><a href="https://wa.me/256755555272?text=Hello%20I%20need%20Printing%20Services"><button class="book">Book</button></a></div>
+</div>
 </body>
 </html>
