@@ -1,23 +1,25 @@
 {
   "name": "One Sarapio",
   "short_name": "One Sarapio",
-  "description": "Muntame Kikuube Trusted Services - Stationery, Printing, Online Services. WhatsApp +256 755555272. Your Journey Starts Today.",
-  "start_url": "/One-Sarapio-/",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0f172a",
-  "theme_color": "#d4a84b",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
       "src": "icon.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
