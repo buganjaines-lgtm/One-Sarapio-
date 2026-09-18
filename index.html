@@ -7,49 +7,46 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0e131c;color:#fff;font-family:Arial}
-header{text-align:center;padding:28px 15px}
-h1{color:#d4b072;font-size:32px}
+header{text-align:center;padding:30px 15px 10px}
+.profile{width:110px;height:110px;border-radius:50%;border:3px solid #d4b072;object-fit:cover}
+h1{color:#d4b072;font-size:32px;margin-top:14px}
 .sub{color:#8a95a8;font-size:13px;margin-top:6px}
-.title{color:#fff;font-size:22px;font-weight:bold;text-align:center;margin:22px 0 10px;letter-spacing:1px}
-.card{background:#1a2332;border:1px solid #2a364d;border-radius:14px;padding:16px;margin:12px auto;max-width:600px}
-.card h3{color:#d4b072;font-size:15px}
-.card p{color:#8a95a8;font-size:12px;margin-top:4px}
-.book{width:100%;background:#c9a86a;color:#000;border:none;border-radius:10px;padding:13px;font-weight:bold;margin-top:12px;cursor:pointer}
-.footer{background:#1a2332;border:2px solid #c9a86a;border-radius:16px;padding:22px;text-align:center;margin:25px auto;max-width:600px;line-height:2}
-.footer b{color:#c9a86a}
+.wa{color:#d4b072;font-size:13px;margin-top:10px}
+.btns{display:flex;gap:8px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.btns a{padding:10px 20px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:bold}
+.fb{background:#2563eb;color:#fff}
+.tk{background:#111827;color:#fff;border:1px solid #333}
+.wp{background:#22c55e;color:#fff}
+.offer{margin:22px auto 8px;display:inline-block;border:1px solid #d4b072;color:#d4b072;padding:12px 28px;border-radius:10px;font-size:12px;letter-spacing:1px}
+.card{background:#1a2332;border:1px solid #242f45;border-radius:14px;padding:16px;margin:12px auto;max-width:600px}
+.card h3{color:#d4b072;font-size:14px}
+.card p{color:#7a8599;font-size:12px;margin-top:4px}
+.book{width:100%;background:#c9a86a;color:#000;border:none;border-radius:10px;padding:13px;font-weight:bold;margin-top:12px;cursor:pointer;font-size:14px}
+.footer{background:#1a2332;border:1px solid #d4b072;border-radius:14px;padding:18px;text-align:center;margin:20px auto;max-width:600px;font-size:13px;line-height:2;color:#8a95a8}
+.footer b{color:#d4b072}
 </style>
 </head>
 <body>
 <header>
-<img src="IMG-0204.jpg" style="width:90px;height:90px;border-radius:50%;border:3px solid #d4b072;object-fit:cover" onerror="this.style.display='none'">
+<img src="IMG-0204.jpg" class="profile" onerror="this.src='profile.jpg'">
 <h1>One Sarapio</h1>
-<p class="sub">Munteme Trading Centre, Kikuube District, Uganda</p>
-<p class="sub" style="color:#d4b072;font-weight:bold">Trusted Services • +256 755 555 272</p>
+<p class="sub">Munteme, Kikuube • Trusted Services</p>
+<p class="sub">Stationery • Printing • Online Services</p>
+<p class="wa">WhatsApp: +256 755 555 272</p>
+<div class="btns">
+<a class="fb" href="https://facebook.com/coppasilenso" target="_blank">Facebook</a>
+<a class="tk" href="https://www.tiktok.com/@1_sarapio" target="_blank">TikTok</a>
+<a class="wp" href="https://wa.me/256755555272" target="_blank">WhatsApp</a>
+</div>
+<div class="offer">SERVICES WE OFFER</div>
 </header>
 
-<!-- SERVICES WE OFFER - BACK LIKE BEFORE -->
-<h2 class="title">SERVICES WE OFFER</h2>
-
-<div class="card"><h3>🛂 Passport Making Service</h3><p>Passport application guidance</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Passport'">Book</button></div>
-<div class="card"><h3>📄 CV + Cover Letter</h3><p>Professional CV & Cover Letter</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=CV'">Book</button></div>
-<div class="card"><h3>📱 Lost Phone Tracking</h3><p>Help track your lost phone</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Phone'">Book</button></div>
-<div class="card"><h3>🛡️ Interpol & Good Conduct</h3><p>Certificate of Good Conduct</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=GoodConduct'">Book</button></div>
-<div class="card"><h3>📝 Stationery & Printing</h3><p>All printing services</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Stationery'">Book</button></div>
-<div class="card"><h3>💻 Online Services</h3><p>TIN, NIRA & more</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Online'">Book</button></div>
-<div class="card"><h3>🪪 National ID Making</h3><p>National ID application help</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=NationalID'">Book</button></div>
-<div class="card"><h3>💼 TIN & NSSF Creating</h3><p>TIN, NSSF account help</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=TIN'">Book</button></div>
-<div class="card"><h3>✈️ Abroad Job Connections</h3><p>Abroad job guidance</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=AbroadJob'">Book</button></div>
-<div class="card"><h3>🔑 Password Recovery</h3><p>Forgot passwords recovery</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Password'">Book</button></div>
-<div class="card"><h3>🌐 Website Designing</h3><p>Business websites</p><button class="book" onclick="location.href='https://wa.me/256755555272?text=Website'">Book</button></div>
-
-<!-- EMAIL AND LOCATION DOWN -->
-<div class="footer">
-<p>📧 Email: <b>buganjaines@gmail.com</b></p>
-<p>📍 Location: <b>Munteme Trading Centre, Kikuube District, Uganda</b></p>
-<p>📞 WhatsApp: <b>+256 755 555 272</b></p>
-<p>🕒 Open: Mon - Sat | 8AM - 8PM</p>
-<p style="margin-top:12px;color:#d4b072;font-weight:bold">© 2026 One Sarapio</p>
-</div>
-
-</body>
-</html>
+<!-- ALL BUTTONS - NOT FORGOTTEN -->
+<div class="card"><h3>🛂 Passport Making</h3><p>Passport application guidance</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20Passport%20Making','_blank')">Book</button></div>
+<div class="card"><h3>📄 CV + Cover Letter</h3><p>Professional CV & Cover Letter</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20CV','_blank')">Book</button></div>
+<div class="card"><h3>📱 Lost Phone Tracking</h3><p>Help track your lost phone</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20Phone%20Tracking','_blank')">Book</button></div>
+<div class="card"><h3>🛡️ Interpol & Good Conduct</h3><p>Certificate of Good Conduct</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20Good%20Conduct','_blank')">Book</button></div>
+<div class="card"><h3>📝 Stationery & Printing</h3><p>All printing services</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20Stationery','_blank')">Book</button></div>
+<div class="card"><h3>💻 Online Services</h3><p>TIN, NIRA & more</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20Online%20Services','_blank')">Book</button></div>
+<div class="card"><h3>🪪 National ID Making</h3><p>National ID application help</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Hi%20I%20need%20National%20ID','_blank')">Book</button></div>
+<div class="card"><h3>💼 TIN & NSSF</h3><p>TIN & NSSF account creating</p><button class="book" onclick="window.open('https://wa.me/256
