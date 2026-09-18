@@ -2,62 +2,57 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>One Sarapio - Munteme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Sarapio - Munteme Kikuube</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0f172a">
+<link rel="icon" href="icon.png">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f172a;color:#e2e8f0;font-family:system-ui,sans-serif;padding:16px}
-.header{text-align:center;padding:18px 0}
-.profile-img{width:115px;height:115px;border-radius:50%;border:3px solid #d4a84b;object-fit:cover;margin:0 auto 12px auto;display:block}
-.header h1{color:#d4a84b;font-size:31px}
-.header p{color:#94a3b8;font-size:13px;margin-top:4px}
-.btns{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
-.btn{padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:13px;color:#fff}
-.btn-fb{background:#2563eb}.btn-tk{background:#000;border:1px solid #444}.btn-wa{background:#22c55e}
-.tag{display:inline-block;margin-top:16px;border:1px solid #d4a84b;color:#d4a84b;padding:8px 20px;border-radius:20px;font-size:11px;letter-spacing:1px}
-.card{background:#1e293b;border-radius:14px;padding:16px;margin-top:14px;border:1px solid #334155}
-.card h3{color:#d4a84b;font-size:14px}
-.card p{color:#94a3b8;font-size:12px;margin:6px 0 12px 0}
-.book{background:#d4a84b;color:#0f172a;border:none;width:100%;padding:12px;border-radius:8px;font-weight:bold;cursor:pointer}
+body{font-family:system-ui;background:#0f172a;color:white;min-height:100vh}
+.header{background:linear-gradient(135deg,#0f172a,#1e293b);padding:20px;text-align:center;border-bottom:3px solid #d4a84b}
+.logo{width:90px;height:90px;border-radius:50%;border:3px solid #d4a84b;object-fit:cover}
+h1{color:#d4a84b;margin:10px 0 5px;font-size:28px}
+.tag{color:#cbd5e1}
+.card{background:#1e293b;margin:15px;border-radius:15px;padding:20px;border:1px solid #334155}
+.btn{display:block;background:#d4a84b;color:#0f172a;text-align:center;padding:15px;border-radius:10px;font-weight:bold;text-decoration:none;margin:10px 0;font-size:18px}
+.service{background:#0f172a;padding:12px;border-radius:8px;margin:8px 0;border-left:4px solid #d4a84b}
+.footer{text-align:center;padding:20px;color:#94a3b8;font-size:13px}
 </style>
 </head>
 <body>
-
 <div class="header">
-<img src="profile.jpg" class="profile-img" alt="One Sarapio">
+<img src="profile.jpg" class="logo" alt="One Sarapio" onerror="this.src='icon.png'">
 <h1>One Sarapio</h1>
-<p>Munteme, Kikuube - Trusted Services</p>
-<p>Stationery - Printing - Online Services</p>
-<p style="color:#cbd5e1;margin-top:6px">WhatsApp: +256 755 555 272</p>
-<div class="btns">
-<a href="https://facebook.com" class="btn btn-fb">Facebook</a>
-<a href="https://tiktok.com" class="btn btn-tk">TikTok</a>
-<a href="https://wa.me/256755555272" class="btn btn-wa">WhatsApp</a>
-</div>
-<div class="tag">SERVICES WE OFFER</div>
+<p class="tag">Munteme - Kikuube | Trusted Services</p>
 </div>
 
-<div class="card"><h3>1. Passport making Service</h3><p>New passport, renewal, express booking.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Passport%20Service')">Book Now</button></div>
-<div class="card"><h3>2. CV + cover Letter Making Service</h3><p>Professional modern CV & cover letter.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=CV%20Cover%20Letter')">Book Now</button></div>
-<div class="card"><h3>3. Lost Phone Tracking Service</h3><p>Track lost phone via IMEI & police help.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Lost%20Phone%20Tracking')">Book Now</button></div>
-<div class="card"><h3>4. Interpol & Certificate Of Good Conduct Service</h3><p>Good Conduct certificate from Interpol.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Good%20Conduct')">Book Now</button></div>
-<div class="card"><h3>5. Abroad Job Connections Service</h3><p>Verified jobs - Qatar, Dubai, Saudi, Europe.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Abroad%20Jobs')">Book Now</button></div>
-<div class="card"><h3>6. Forgot Passwords Recovery Service</h3><p>Gmail, Facebook, URA password recovery.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Password%20Recovery')">Book Now</button></div>
-<div class="card"><h3>7. National ID Making Service</h3><p>New ID, replacement, correction - NIRA.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=National%20ID')">Book Now</button></div>
-<div class="card"><h3>8. TIN & NSSF Account Creating Service</h3><p>TIN registration & NSSF account opening.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=TIN%20NSSF')">Book Now</button></div>
-<div class="card"><h3>9. Website Designing Service</h3><p>Business websites cheap & professional.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Website%20Design')">Book Now</button></div>
-<div class="card"><h3>10. Stationary Service</h3><p>Printing, photocopy, scanning, laminating.</p><button class="book" onclick="window.open('https://wa.me/256755555272?text=Stationary')">Book Now</button></div>
-
-<!-- EXACT FOOTER FROM YOUR SCREENSHOT - DETAILS DOWN -->
-<div style="background:#1e293b;border-radius:20px;padding:35px 20px;margin-top:25px;border-top:3px solid #d4a84b;text-align:center">
-<p style="color:#e2e8f0;font-size:15px;margin:12px 0">📧 Email: <span style="color:#d4a84b">buganjaines@gmail.com</span></p>
-<p style="color:#e2e8f0;font-size:15px;margin:12px 0">📍 Location: Munteme Trading Centre, Kikuube District, Uganda</p>
-<p style="color:#e2e8f0;font-size:15px;margin:12px 0">📞 WhatsApp: +256 755 555 272</p>
-<p style="color:#e2e8f0;font-size:15px;margin:12px 0">🕒 Open: Mon - Sat | 8AM - 8PM</p>
-<p style="color:#d4a84b;font-size:14px;margin-top:22px">© 2026 One Sarapio</p>
+<div class="card">
+<a class="btn" href="https://wa.me/256755555272?text=Hello%20One%20Sarapio%20-%20I%20need%20your%20service">💬 WhatsApp Us: +256755555272</a>
+<a class="btn" style="background:#25D366;color:white" href="tel:+256755555272">📞 Call Now</a>
 </div>
 
+<div class="card">
+<h3 style="color:#d4a84b;margin-bottom:10px">Our Services</h3>
+<div class="service">📚 Stationery & School Supplies</div>
+<div class="service">🖨️ Printing, Photocopy, Scanning</div>
+<div class="service">💻 Online Services - URA, UNEB, Applications</div>
+<div class="service">💰 Mobile Money - MTN & Airtel</div>
+<div class="service">🎨 Graphic Design & Branding</div>
+<div class="service">📄 Secretarial Services</div>
+</div>
+
+<div class="card">
+<h3 style="color:#d4a84b">Location</h3>
+<p>Munteme Trading Centre<br>Kikuube District, Uganda<br>Open: Mon - Sun 7am - 9pm</p>
+</div>
+
+<div class="footer">
+One Sarapio © 2026<br>Munteme Kikuube - We Serve With Trust
+</div>
+
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+</script>
 </body>
 </html>
