@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One Sarapio - Munteme Kikuube</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0f172a">
-<link rel="icon" href="icon.png">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>One Sarapio - Trusted</title>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1e40af">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#0f172a;color:white;min-height:100vh}
-.header{background:linear-gradient(135deg,#0f172a,#1e293b);padding:20px;text-align:center;border-bottom:3px solid #d4a84b}
-.logo{width:90px;height:90px;border-radius:50%;border:3px solid #d4a84b;object-fit:cover}
-h1{color:#d4a84b;margin:10px 0 5px;font-size:28px}
-.tag{color:#cbd5e1}
-.card{background:#1e293b;margin:15px;border-radius:15px;padding:20px;border:1px solid #334155}
-.btn{display:block;background:#d4a84b;color:#0f172a;text-align:center;padding:15px;border-radius:10px;font-weight:bold;text-decoration:none;margin:10px 0;font-size:18px}
-.service{background:#0f172a;padding:12px;border-radius:8px;margin:8px 0;border-left:4px solid #d4a84b}
-.footer{text-align:center;padding:20px;color:#94a3b8;font-size:13px}
+body{background:#eff6ff;font-family:system-ui,sans-serif}
+.head{background:#dbeafe;padding:20px;display:flex;align-items:center;gap:14px}
+.ava{width:88px;height:88px;border-radius:50%;border:3px solid #2563eb;object-fit:cover}
+.h1{color:#1e3a8a;font-size:26px;font-weight:900;line-height:1}
+.sub{color:#1e40af;font-size:13px}
+.badge{background:#1d4ed8;color:white;padding:6px 10px;border-radius:10px;font-size:11px;display:inline-flex;align-items:center;gap:4px;margin-top:6px}
+.btns{background:#bfdbfe;padding:12px;display:flex;gap:10px;border-radius:16px;margin:12px}
+.b{flex:1;padding:13px;border-radius:12px;text-align:center;font-weight:800;text-decoration:none;color:white;font-size:15px}
+.bw{background:#1d4ed8}
+.bg{background:#22c55e}
+.sec{padding:12px}
+.t{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.t b{color:#1e3a8a;font-size:20px}
+.t a{color:#2563eb;font-size:14px;text-decoration:none}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.it{background:white;border-radius:14px;padding:12px 6px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06);border:1px solid #dbeafe}
+.ic{width:54px;height:54px;background:#dbeafe;border-radius:50%;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.it b{font-size:11px;color:#1e293b;display:block;line-height:1.2}
+.nav{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:12px 0;border-top:1px solid #dbeafe}
+.nav a{color:#64748b;text-decoration:none;font-size:12px;text-align:center;font-weight:600}
+.nav a.act{color:#1d4ed8}
+.pad{padding-bottom:70px}
 </style>
 </head>
 <body>
-<div class="header">
-<img src="profile.jpg" class="logo" alt="One Sarapio" onerror="this.src='icon.png'">
-<h1>One Sarapio</h1>
-<p class="tag">Munteme - Kikuube | Trusted Services</p>
+<div class="head">
+<img src="profile.jpg" class="ava" onerror="this.src='icon-192.png'">
+<div>
+<div class="h1">One Sarapio</div>
+<div class="sub">Munteme Kikuube Trusted Services</div>
+<div class="badge">🛡️ Licensed & Verified - Uganda 🇺🇬</div>
 </div>
-
-<div class="card">
-<a class="btn" href="https://wa.me/256755555272?text=Hello%20One%20Sarapio%20-%20I%20need%20your%20service">💬 WhatsApp Us: +256755555272</a>
-<a class="btn" style="background:#25D366;color:white" href="tel:+256755555272">📞 Call Now</a>
 </div>
-
-<div class="card">
-<h3 style="color:#d4a84b;margin-bottom:10px">Our Services</h3>
-<div class="service">📚 Stationery & School Supplies</div>
-<div class="service">🖨️ Printing, Photocopy, Scanning</div>
-<div class="service">💻 Online Services - URA, UNEB, Applications</div>
-<div class="service">💰 Mobile Money - MTN & Airtel</div>
-<div class="service">🎨 Graphic Design & Branding</div>
-<div class="service">📄 Secretarial Services</div>
+<div class="btns">
+<a class="b bw" href="https://wa.me/256755555272">💬 WhatsApp</a>
+<a class="b bg" href="tel:+256755555272">📞 Call</a>
 </div>
-
-<div class="card">
-<h3 style="color:#d4a84b">Location</h3>
-<p>Munteme Trading Centre<br>Kikuube District, Uganda<br>Open: Mon - Sun 7am - 9pm</p>
+<div class="sec pad">
+<div class="t"><b>Our Services</b><a href="#">See all →</a></div>
+<div class="grid">
+<div class="it"><div class="ic">📘</div><b>Passport Making</b></div>
+<div class="it"><div class="ic">🪪</div><b>National ID</b></div>
+<div class="it"><div class="ic">📄</div><b>CV Cover Letter</b></div>
+<div class="it"><div class="ic">🌍</div><b>Abroad Job Connections</b></div>
+<div class="it"><div class="ic">🛡️</div><b>Interpol Certificate</b></div>
+<div class="it"><div class="ic">📍</div><b>Lost Phone Tracking</b></div>
+<div class="it"><div class="ic">🔑</div><b>Forgot Passwords Recovery</b></div>
+<div class="it"><div class="ic">🏦</div><b>TIN & NSSF</b></div>
+<div class="it"><div class="ic">💻</div><b>Website Designing</b></div>
+<div class="it"><div class="ic">📚</div><b>Stationery</b></div>
+<div class="it"><div class="ic">🖨️</div><b>Printing</b></div>
+<div class="it"><div class="ic">🌐</div><b>Online Services URA UNEB</b></div>
+<div class="it"><div class="ic">💵</div><b>Mobile Money</b></div>
+<div class="it"><div class="ic">🎨</div><b>Graphic Design</b></div>
+<div class="it"><div class="ic">📝</div><b>Secretarial</b></div>
 </div>
-
-<div class="footer">
-One Sarapio © 2026<br>Munteme Kikuube - We Serve With Trust
 </div>
-
-<script>
-if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
-</script>
+<div class="nav">
+<a class="act" href="#">🏠<br>Home</a><a href="#">💼<br>Services</a><a href="#">🕒<br>History</a><a href="#">👤<br>Profile</a>
+</div>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}</script>
 </body>
-</html>
+  </html>
