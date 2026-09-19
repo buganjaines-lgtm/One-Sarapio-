@@ -2,57 +2,71 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>One Sarapio - Airtel Pay 5000</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Sarapio - Munteme, Kikuube</title>
 <style>
-body{margin:0;font-family:system-ui;background:#fff0f0;padding-bottom:80px}
-.header{background:#ff0000;color:white;padding:16px;text-align:center;position:sticky;top:0;z-index:10}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px}
-.card{background:white;border-radius:16px;padding:14px;text-align:center;box-shadow:0 3px 10px #0002;border:1px solid #ffe0e0}
-.card b{display:block;margin:6px 0}
-.pay{background:#ff0000;color:white;border:none;padding:9px;width:100%;border-radius:10px;font-weight:800}
-.foot{position:fixed;bottom:0;left:0;right:0;background:white;padding:10px;border-top:2px solid #ff0000;text-align:center}
-.foot a{background:#25D366;color:white;padding:10px 18px;border-radius:20px;text-decoration:none;font-weight:800}
+body{margin:0;font-family:Arial;background:#0f0f0f;color:#fff}
+.header{background:#000;padding:20px;text-align:center;border-bottom:2px solid #FFD700}
+.header h1{color:#FFD700;margin:0}
+.header p{color:#ccc}
+.btn{background:#FFD700;color:#000;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;margin:5px}
+.disclaimer{background:#300;border:1px solid #ff4444;padding:15px;margin:20px;border-radius:10px}
+.disclaimer h3{color:#ff4444;margin-top:0}
+.card{background:#1a1a1a;padding:18px;margin:15px;border-radius:12px;border-left:4px solid #FFD700}
+.testimonials{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:15px}
+.testi{background:#222;padding:12px;border-radius:10px;text-align:center}
+.testi img{width:80px;height:80px;border-radius:50%;object-fit:cover}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:15px}
+.work-grid div{background:#222;padding:10px;border-radius:10px;text-align:center;color:#FFD700}
+footer{background:#000;padding:20px;text-align:center;color:#888;border-top:1px solid #333;margin-top:20px}
+@media(max-width:700px){.testimonials,.work-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+
 <div class="header">
-<h3 style="margin:0">One Sarapio - Munteme Kikuube</h3>
-<small>Airtel Money: 0755555272</small><br>
-<b>Tap Service - Pay 5K - PIN Direct</b>
+<h1>One Sarapio</h1>
+<p>Munteme, Kikuube | Stationery • Printing • Online Services Assistant</p>
+<p>WhatsApp: +256 755 555 272 | 8AM - 8PM Daily</p>
+<a class="btn" href="https://wa.me/256755555272">Chat on WhatsApp</a>
 </div>
-<div class="grid" id="grid"></div>
-<div class="foot"><a href="https://wa.me/256755555272?text=Hello One Sarapio, I need help">WhatsApp: 0755555272</a></div>
-<script>
-const services=[
-["📘","Passport"],["🪪","National ID"],["📄","CV Making"],["🌍","Interpol Letter"],
-["📱","Phone Tracking"],["🏦","NSSF Statement"],["🖨️","Printing & Photocopy"],["💰","Mobile Money Services"],
-["🎓","Academic Documents"],["💼","Job Application"],["📑","Affidavit"],["✉️","Cover Letter"],
-["🔄","Sim Replacement"],["🏧","URA TIN"],["📃","LC Letters"]
-];
-function pay(name){
-  let phone=prompt(`ONE SARAPIO\nPay UGX 5000 for ${name}\n\nEnter YOUR Airtel number:\n0701234567`);
-  if(!phone) return;
-  phone=phone.trim().replace(/\s/g,'');
-  if(phone.length<10){alert("Enter valid number");return;}
-  if(confirm(`OK to send PIN request?\nAmount: UGX 5000\nTo: 0755555272 One Sarapio\nYour number: ${phone}\nService: ${name}\n\nTap OK -> Enter PIN`)){
-    let ussd=`*185*1*1*0755555272*5000%23`;
-    window.location.href=`tel:${ussd}`;
-    setTimeout(()=>{
-      if(confirm(`Did PIN popup appear on ${phone}?\nAfter PIN, send proof on WhatsApp 0755555272\nTap OK to WhatsApp now`)){
-        window.location.href=`https://wa.me/256755555272?text=One Sarapio, I paid UGX 5000 for ${name}. My number ${phone}. Please send document.`;
-      }
-    },2000);
-  }
-}
-document.getElementById("grid").innerHTML=services.map(s=>`
-<div class="card" onclick="pay('${s[1]}')">
-<div style="font-size:32px">${s[0]}</div>
-<b>${s[1]}</b>
-<small style="color:#ff0000;font-weight:800">UGX 5000</small>
-<button class="pay">PAY 5K - PIN DIRECT</button>
+
+<div class="disclaimer">
+<h3>⚠️ IMPORTANT DISCLAIMER</h3>
+<p>One Sarapio is a <b>private assistance agency</b>. We are NOT Ministry of Internal Affairs, NOT Uganda Police, NOT Interpol Uganda.</p>
+<p>All passports, Certificate of Good Conduct and other government documents are issued ONLY by the government. We only help you apply correctly, fill forms, book appointments and organize files. Government fees are paid to URA/government accounts. Our service fee is separate and we give a receipt.</p>
 </div>
-`).join('');
-</script>
-</body>
-</html>
+
+<div class="card">
+<h2>Our Services</h2>
+<p><b>1. Passport Application Guidance</b> - Online application, requirements, appointment booking. Service 30k + Gov't fee.</p>
+<p><b>2. CV & Cover Letter</b> - Professional CVs that get interviews + online application help.</p>
+<p><b>3. Lost Phone Assistance</b> - Police report, IMEI blocking, guidance. No guarantee, no hacking.</p>
+<p><b>4. Certificate of Good Conduct</b> - Help with Interpol application forms & bank slip.</p>
+<p><b>5. Stationery & Printing</b> - Printing, binding, laminating, photocopy.</p>
+</div>
+
+<h2 style="text-align:center;color:#FFD700">What Our Customers Say</h2>
+<div class="testimonials">
+<div class="testi">
+<img src="images/client1.jpg" alt="client">
+<p>"Sarapio helped me with passport, I got appointment in 3 days"</p>
+<b>Mukisa J. - Kikuube</b>
+</div>
+<div class="testi">
+<img src="images/client2.jpg" alt="client">
+<p>"My CV was made well, I got interview at Kikuube District"</p>
+<b>Ateenyi P. - Hoima</b>
+</div>
+<div class="testi">
+<img src="images/client3.jpg" alt="client">
+<p>"He helped me with phone recovery process, police work was easy"</p>
+<b>Kato R. - Munteme</b>
+</div>
+</div>
+
+<h2 style="text-align:center;color:#FFD700">Recent Work Samples</h2>
+<div class="work-grid">
+<div>📄 CV Sample (Blurred Private Info)</div>
+<div>✉️ Cover Letter Sample</div>
+<div>
